@@ -1,0 +1,8 @@
+{ 
+  "scripts": {
+    "dev": "cd components/tic-tac-toe-mc && npm install && npm run build && cd - && npx webcm"
+  },
+  "devDependencies": {
+    "webcm": "^0.10.6"
+  }
+}

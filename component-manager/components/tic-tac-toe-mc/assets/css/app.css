@@ -1,0 +1,30 @@
+.tic-tac-toe .grid-row {
+  display: table;
+}
+
+.tic-tac-toe .grid-square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 64px;
+  height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 64px;
+}
+
+.tic-tac-toe .choose-side {
+  margin-bottom: 8px;
+}
+
+.tic-tac-toe .choose-side button {
+  margin-right: 4px;
+}
+
+.tic-tac-toe .reset {
+  margin-top: 8px;
+}

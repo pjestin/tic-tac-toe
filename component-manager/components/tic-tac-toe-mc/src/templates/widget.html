@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ stylesheet }}">
+</head>
+
+<body>
+  <div id="tic-tac-toe" class="tic-tac-toe">
+    <h1>Welcome to Tic Tac Toe</h1>
+    <div id="choose-side" class="choose-side"></div>
+    <div id="banner"></div>
+    <div class="grid">
+      {{#each initialGridData}}
+      <div class="grid-row" id="row-{{@index}}">
+        {{#each this}}
+        <button class="grid-square" id="square-{{@../index}}-{{@index}}"
+          onclick="onSquareClick({{@../index}}, {{@index}})">
+          {{this}}
+        </button>
+        {{/each}}
+      </div>
+      {{/each}}
+    </div>
+    <button id="reset" class="reset" onclick="onResetClick()" class="reset">Reset</button>
+  </div>
+</body>
+
+<script>
+  function onSideClick(side) {
+    webcm.track('side-click', { side })
+  }
+  function onSquareClick(row, col) {
+    webcm.track('square-click', { row, col })
+  }
+  function onResetClick(row, col) {
+    webcm.track('reset')
+  }
+</script>
+
+</html>

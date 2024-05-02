@@ -1,0 +1,32 @@
+{
+  "name": "tic-tac-toe-mc",
+  "namespace": "tic-tac-toe-mc",
+  "description": "A managed component for Tic Tac Toe",
+  "icon": "assets/icon.svg",
+  "permissions": {
+    "access_client_kv": {
+      "description": "This permission is used to facilitate better a user experience.",
+      "required": true
+    },
+    "server_network_requests": {
+      "description": "This permission is used to facilitate better a user experience.",
+      "required": true
+    },
+    "serve_static_files": {
+      "description": "This permission is used to facilitate better a user experience.",
+      "required": true
+    },
+    "provide_server_functionality": {
+      "description": "This permission is used to facilitate better a user experience.",
+      "required": true
+    },
+    "provide_widget": {
+      "description": "This permission is used to facilitate better a user experience.",
+      "required": true
+    },
+    "execute_unsafe_scripts": {
+      "description": "This permission is used to facilitate better a user experience.",
+      "required": true
+    }
+  }
+}
